@@ -1,0 +1,95 @@
+/* Загальні стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* Основний зелений колір */
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: #28a745;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding-top: 100px;
+  position: absolute;
+  top: 70px; /* Розташування меню під h1 */
+  width: 100%;
+}
+
+nav ul {
+  list-style: none; /* Відключаємо стандартні маркери списку */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 10px 0; /* Відстань між елементами списку */
+}
+
+nav a {
+  font-size: x-large;
+  padding: 10px 20px;
+  border: 3px solid #28a745;
+  border-radius: 10px;
+  color: #28a745;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #28a745;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}

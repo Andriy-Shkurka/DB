@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Information</h1>
+
+    <!-- Table for Car Information -->
+    <h2>Cars</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% cars.forEach(car => { %>
+                <tr>
+                    <td><%= car.make %></td>
+                    <td><%= car.model %></td>
+                    <td><%= car.client_first_name %> <%= car.client_last_name %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Table for Client Information -->
+    <h2>Owner Information</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% cars.forEach(car => { %>
+                <tr>
+                    <td><%= car.client_first_name %></td>
+                    <td><%= car.client_last_name %></td>
+                    <td><%= car.phone %></td>
+                    <td><%= car.email %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Table for Employee Information -->
+    <h2>Employee Information</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Experience (years)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% employees.forEach(employee => { %>
+                <tr>
+                    <td><%= employee.employee_first_name %></td>
+                    <td><%= employee.employee_last_name %></td>
+                    <td><%= employee.position %></td>
+                    <td><%= employee.experience %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Table for Service Information -->
+    <h2>Service Information</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Service Name</th>
+                <th>Cost</th>
+                <th>Duration (min)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% services.forEach(service => { %>
+                <tr>
+                    <td><%= service.service_name %></td>
+                    <td>$<%= service.service_cost %></td>
+                    <td><%= service.service_duration %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <div class="home">
+        <a href="/">Back to Home</a>
+    </div>
+
+</body>
+</html>
